@@ -1,0 +1,117 @@
+section.pricing-section {
+	font-family: "Roboto", sans-serif;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	background-color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 0.8em;
+}
+
+div {
+	display: flex;
+	flex-direction: column;
+	flex: 1 1 auto;
+	width: 27%;
+	margin: 5% 1%;
+}
+section div:nth-of-type(2) {
+	border-left: solid 0.03em rgb(214, 242, 252);
+	border-right: solid 0.03em rgb(214, 242, 252);
+	padding: 0 2%;
+}
+
+body {
+	background-color: rgb(25, 173, 192);
+	position: relative;
+	height: 100vh;
+}
+
+section h1 {
+	color: gray;
+	text-transform: uppercase;
+	text-align: center;
+	padding-bottom: 0.6em;
+	font-size: 1.1em;
+}
+
+section ul {
+	text-align: center;
+	text-transform: uppercase;
+	color: rgb(62, 146, 243);
+	list-style-type: none;
+	padding: 0em 1em;
+	font-weight: bold;
+}
+
+.list-elements {
+	padding: 1em 0;
+	border-bottom: 0.05em solid lightblue;
+}
+.list-elements:hover {
+	transform: translateY(-3%);
+	cursor: default;
+}
+
+.pricing-paragraph {
+	font-size: 1.5em;
+	margin-bottom: 2em;
+	font-weight: bolder;
+}
+
+.list-elements:nth-of-type(1) {
+	border-top: 0.05em solid lightblue;
+}
+
+a {
+	padding: 1.2em 1.3em;
+	border: 0.1em solid gray;
+	border-radius: 1em;
+	text-decoration: none;
+	color: rgb(62, 146, 243);
+	margin: auto;
+	display: block;
+
+	transition: transform, box-shadow 200ms ease-in-out;
+}
+
+a:hover {
+	transform: translateY(-3%);
+	box-shadow: 0 3px 5px rgb(66, 96, 141);
+}
+
+#center-button {
+	background-color: rgb(31, 115, 241);
+	color: #fff;
+}
+
+#border-div {
+	background-color: #fff;
+	flex-direction: row;
+	margin: 2%;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+	section.pricing-section {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translate(-50%, 0);
+		border-radius: 0.8em;
+	}
+	div {
+		width: 100%;
+	}
+	section div:nth-of-type(2) {
+		border: none;
+	}
+}
