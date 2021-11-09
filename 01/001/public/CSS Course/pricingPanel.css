@@ -55,7 +55,7 @@ section ul {
 	border-bottom: 0.05em solid lightblue;
 }
 .list-elements:hover {
-	transform: translateY(-3%);
+	transform: scale(107%);
 	cursor: default;
 }
 

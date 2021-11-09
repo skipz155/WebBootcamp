@@ -1,0 +1,105 @@
+body {
+	background-color: #ffbfec;
+}
+
+nav {
+	background-color: #f1e1f1;
+	box-shadow: 0px 1px 5px 0px #000;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.637);
+}
+
+.shadowsForImages {
+	content: "";
+	display: flex;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+.candy {
+	background-size: cover;
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	box-shadow: inset 3px 3px 10px 0 #ffffff;
+	border-right: solid 1px rgb(255, 255, 255);
+}
+.candy#candyOne {
+	background-image: url("images/candy (1).jpg");
+	border-radius: 5em 0em 0em 5em;
+}
+.candy#candyTwo {
+	background-image: url("images/candy (2).jpg");
+	border-radius: 0 5em 5em 0em;
+}
+.candy#candyThree {
+	background-image: url("images/candy (3).jpg");
+	border-radius: 5em 0em 0em 5em;
+}
+
+.textCandy {
+	padding: 3em;
+	border-right: solid 2px #fff;
+	background-color: rgba(144, 46, 255, 0.2);
+	border-radius: 0em 5em 5em 0em;
+	font-weight: bold;
+	font-style: italic;
+	color: #fff;
+	text-align: justify;
+}
+
+.textCandy:nth-of-type(1) {
+	border-left: solid 2px #fff;
+	border-radius: 5em 0em 0em 5em;
+	border-right: none;
+}
+
+.carousel-item {
+	max-height: 250px;
+	min-height: 150px;
+}
+.carousel-item img {
+	max-height: 150%;
+	max-width: 150%;
+	position: relative;
+	top: 0;
+}
+.carousel-item div {
+	text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.937);
+	background-color: rgba(0, 0, 0, 0.4);
+	border-radius: 2rem;
+	box-shadow: 0px 15px 15px 5px rgba(0, 0, 0, 0.2),
+		0px -15px 15px 5px rgba(0, 0, 0, 0.2), 15px 0px 15px 5px rgba(0, 0, 0, 0.2),
+		-15px 0px 15px 5px rgba(0, 0, 0, 0.2);
+}
+
+section div h1 {
+	text-align: center;
+	line-height: 3.5rem;
+}
+
+footer {
+	background-color: #f1e1f1;
+	width: 100%;
+	height: 5vh;
+	box-shadow: 0px -2px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+footer p {
+	background-color: #f1e1f1;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.637);
+	color: #fff;
+	text-align: end;
+	padding-top: 2vh;
+}
+@media only screen and (max-width: 976px) {
+	.textCandy,
+	.textCandy:nth-of-type(1) {
+		border-radius: 5rem 5rem 5rem 5rem;
+	}
+
+	.candy#candyThree,
+	.candy#candyTwo,
+	.candy#candyOne {
+		border-radius: 5rem 5rem 5rem 5rem;
+	}
+}
