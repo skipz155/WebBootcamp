@@ -1,0 +1,85 @@
+$primary-color: #ad2e2e;
+$secondary-color: #b18459;
+$font-sans: Helvetica, sans-serif;
+$font-primary-color: #ffffff;
+$font-secondary-color: #000000;
+
+* {
+	margin: 0;
+	padding: 0;
+	font: $font-sans;
+	color: $font-primary-color;
+}
+
+.score-container {
+	background-color: $primary-color;
+	min-width: 320px;
+	min-height: 100px;
+	max-width: 640px;
+	max-height: 140px;
+	margin: 1em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	.score-display {
+		font-size: 2em;
+		margin: 0.5em;
+		padding: 1em 1.5em;
+	}
+}
+
+.button-container {
+	background-color: $secondary-color;
+	min-width: 320px;
+	min-height: 70px;
+	max-width: 640px;
+	max-height: 140px;
+	margin: 1em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	@mixin btn-sel-style {
+		background-color: $font-primary-color;
+		color: $font-secondary-color;
+		font-weight: bold;
+		border: none;
+		border-radius: 3px;
+	}
+
+	@mixin btn-hvr {
+		transform: translate(3px, 2px);
+		cursor: pointer;
+	}
+
+	button {
+		padding: 1em 1.5em;
+		margin: 0 0.5em;
+
+		@include btn-sel-style();
+		&:hover {
+			@include btn-hvr();
+		}
+	}
+	select {
+		padding: 0.7em 1.2em;
+		margin: 0 0.5em;
+
+		@include btn-sel-style();
+		option {
+			color: $font-secondary-color;
+		}
+		&:hover {
+			cursor: pointer;
+		}
+	}
+}
+
+.winner {
+	color: green;
+}
+
+.loser {
+	color: red;
+}
