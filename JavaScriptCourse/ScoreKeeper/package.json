@@ -1,0 +1,8 @@
+{
+	"scripts": {
+		"watch:scss": "sass -w style.scss style.css"
+	},
+	"dependencies": {
+		"sass": "^1.54.5"
+	}
+}

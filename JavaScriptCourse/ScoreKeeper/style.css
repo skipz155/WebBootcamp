@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  font: Helvetica, sans-serif;
+  color: #ffffff;
+}
+
+.score-container {
+  background-color: #ad2e2e;
+  min-width: 320px;
+  min-height: 100px;
+  max-width: 640px;
+  max-height: 140px;
+  margin: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.score-container .score-display {
+  font-size: 2em;
+  margin: 0.5em;
+  padding: 1em 1.5em;
+}
+
+.button-container {
+  background-color: #b18459;
+  min-width: 320px;
+  min-height: 70px;
+  max-width: 640px;
+  max-height: 140px;
+  margin: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button-container button {
+  padding: 1em 1.5em;
+  margin: 0 0.5em;
+  background-color: #ffffff;
+  color: #000000;
+  font-weight: bold;
+  border: none;
+  border-radius: 3px;
+}
+.button-container button:hover {
+  transform: translate(3px, 2px);
+  cursor: pointer;
+}
+.button-container select {
+  padding: 0.7em 1.2em;
+  margin: 0 0.5em;
+  background-color: #ffffff;
+  color: #000000;
+  font-weight: bold;
+  border: none;
+  border-radius: 3px;
+}
+.button-container select option {
+  color: #000000;
+}
+.button-container select:hover {
+  cursor: pointer;
+}
+
+.winner {
+  color: green;
+}
+
+.loser {
+  color: red;
+}/*# sourceMappingURL=style.css.map */
