@@ -1,0 +1,61 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	form {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 1em;
+		padding: 1.7em;
+		align-items: flex-start;
+		justify-content: space-evenly;
+		max-width: 760px;
+		background-color: gray;
+		border-radius: 5px;
+
+		input {
+			width: 630px;
+			height: 27px;
+			margin-right: 1em;
+			margin-top: 0.5em;
+			padding: 0 0.5em;
+
+			&:focus {
+				outline-width: 0;
+			}
+		}
+
+		#verify-btn {
+			width: 80px;
+			height: 29px;
+			margin-top: 0.5em;
+
+			&:hover {
+				background-color: rgb(196, 196, 196);
+				cursor: pointer;
+			}
+			&:active {
+				background-color: rgb(156, 156, 156);
+			}
+		}
+	}
+
+	#outcome-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		.guessed-language {
+			color: red;
+			font-size: 2em;
+		}
+	}
+}
