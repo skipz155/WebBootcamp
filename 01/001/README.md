@@ -1,1 +1,1 @@
-# Museum of Candy
+# Museum of Candy and rest of course materials
